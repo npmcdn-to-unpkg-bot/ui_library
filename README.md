@@ -5,12 +5,11 @@ Our goal is to segragate the *CSS, FONT, HTML, and JS* 3rd party artifacts, here
 
 #### Elements
 Our solution elements include:
-* *[Node](https://nodejs.org/en/)* - Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It is used to support the UI construction effort; it is not required to run the application. This document assumes the reader is thouroughly familar with [Node](https://nodejs.org/en/) and its modular architecture.
+ * *[Node](https://nodejs.org/en/)* - Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It is used to support the UI construction effort; it is not required to run the application. This document assumes the reader is thouroughly familar with [Node](https://nodejs.org/en/) and its modular architecture.
  * *[linemanjs](http://linemanjs.com/)* - the development framework used to build the application UI.
  * *[grunt](http://gruntjs.com/)* - the javascript task runner.
  * *[ui_libraries](https://github.com/Dematiclabs/ui_libraries)* - repository including the artifacts.
  * *iq_poc/ngclient/src/main/webapp/vendor* - the folder where the *artifacts* are installed.
- * *dl-install-libs*, a custom *[grunt](http://gruntjs.com/)* task that uses the [grunt-exec](https://www.npmjs.com/package/grunt-exec) plugin to install all *artifacts*.
  * *.gitignore*, a git file including a configuration to ignore the *iq_poc/ngclient/src/main/webapp/vendor* folder.
  * *[maven-exec](http://www.mojohaus.org/exec-maven-plugin/)*, a maven plugin used execute a build step to load the *artifacts*. 
 
@@ -25,7 +24,9 @@ The solution consists in harnessing the *3rd party ui artifacts* required to run
  * clone the *[ui_libraries](https://github.com/Dematiclabs/ui_libraries)* repository.
 
 ##### Add a new library to the *[ui_libraries](https://github.com/Dematiclabs/ui_libraries)* repository:
+ * install the *artifacts* in your *iq_poc/ngclient/src/main/webapp/vendor* sandbox and test them thouroughly.
  * navigate to the *[ui_libraries](https://github.com/Dematiclabs/ui_libraries)* local repository.
+ * create a working branch
  * refresh the *[node_modules](https://github.com/Dematiclabs/node_modules)* repository. 
  * install the desired *3rd party ui artifact(s)* in the local repository's *vendor/css*, *vendor/fonts/static*, and *vendor/js* folders.
  * commit and check in the changes to the *[ui_libraries](https://github.com/Dematiclabs/ui_libraries)* repository.
