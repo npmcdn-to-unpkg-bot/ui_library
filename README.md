@@ -24,7 +24,7 @@ The solution consists in harnessing the *3rd party ui artifacts* required to run
  * clone the *[ui_libraries](https://github.com/Dematiclabs/ui_libraries)* repository.
 
 ##### Add a new library to the *[ui_libraries](https://github.com/Dematiclabs/ui_libraries)* repository:
- * install the *artifacts* in your *iq_poc/ngclient/src/main/webapp/vendor* sandbox and test them thouroughly.
+ * install the *artifacts* in your *iq_poc/ngclient/src/main/webapp/vendor* sandbox and test them thoroughly.
  * navigate to the *[ui_libraries](https://github.com/Dematiclabs/ui_libraries)* local repository.
  * create a working branch
  * refresh the *[node_modules](https://github.com/Dematiclabs/node_modules)* repository. 
