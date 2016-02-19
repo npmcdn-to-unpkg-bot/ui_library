@@ -1,5 +1,5 @@
 #### Introduction
-Our goal is to segragate the *CSS, FONT, HTML, and JS* 3rd party artifacts, hereon referred to as *artifacts*, used to run the *application client* into their own repository, separate from the *application source repository* , while seamlessly:
+Our goal is to segregate the *CSS, FONT, HTML, and JS* 3rd party artifacts, hereon referred to as *artifacts*, used to run the *application client* into their own repository, separate from the *application source repository* , while seamlessly:
  * supporting the management of these *artifacts* during the *UI software construction process*.
  * installing or updating the *artifacts* during *maven builds*.
 
