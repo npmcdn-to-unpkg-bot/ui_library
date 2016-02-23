@@ -2,6 +2,7 @@
 Our goal is to segregate the *CSS, FONT, HTML, and JS* 3rd party artifacts, hereon referred to as *artifacts*, used to run the *application client* into their own repository, separate from the *application source repository* , while seamlessly:
  * supporting the management of these *artifacts* during the *UI software construction process*.
  * installing or updating the *artifacts* during *maven builds*.
+ * maintaining version integrity.
 
 #### Elements
 Our solution elements include:
@@ -14,7 +15,7 @@ Our solution elements include:
  * *[maven-exec](http://www.mojohaus.org/exec-maven-plugin/)*, a maven plugin used execute a build step to load the *artifacts*. 
 
 #### Highlights
-The solution consists in harnessing the *3rd party ui artifacts* required to run the application in their own *[ui libratries](https://github.com/Dematiclabs/ui_libraries)* repository, distinct from the *application respository*. When a new *3rd party ui artifact* is required or an existing *3rd party ui artifact* needs to be updated, the work is done in the **ui artifact** local repository and checked in the *[ui libratries](https://github.com/Dematiclabs/ui_libraries)* repository. The build scripts include logic to extract the *3rd party ui artifact(s)* from the *[ui libratries](https://github.com/Dematiclabs/ui_libraries)* repository and integrate them into the application *vendor* folder.
+The solution consists in harnessing the *3rd party ui artifacts* required to run the application in their own *[ui libratries](https://github.com/Dematiclabs/ui_libraries)* repository, distinct from the *application repository*. When a new *3rd party ui artifact* is required or an existing *3rd party ui artifact* needs to be updated, the work is done in the **ui artifact** local repository and checked in the *[ui libraries](https://github.com/Dematiclabs/ui_libraries)* repository. The build scripts include logic to extract the *3rd party ui artifact(s)* from the *[ui libratries](https://github.com/Dematiclabs/ui_libraries)* repository and integrate them into the application *vendor* folder.
 
 #### Workflow
 
