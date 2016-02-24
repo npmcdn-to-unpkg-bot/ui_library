@@ -18,27 +18,28 @@ Our solution elements include:
 
 ## Highlights
 The collection of *UI Library* files required to build *iq poc* is kept in the *ui_library* repository, separate from the *iq_poc* repository; it includes all *UI Libraries* ever used to build *iq_poc*; this is relevant to ensure support to build older versions. The recipe to populate the *iq_poc* *UI Library folder* with the current *UI Library* files is kept in the *ui_library.json* file located in the *iq_poc* *webbapp* folder.
-* the ui libraries repository
- * the *iq poc* *UI Libraries* will be kept in the Github *ui_library* repository.
- * each *UI Library* is kept on its own folder
- * *UI Library* are named to identify the *UI Library* version.
- * new *UI Libraries* are added as needed, using the folder naming scheme aforementioned.
+### the *UI Library* repository
+* the *iq poc* *UI Libraries* will be kept in the Github *ui_library* repository.
+* each *UI Library* is kept on its own folder
+* *UI Library* are named to identify the *UI Library* version.
+* new *UI Libraries* are added as needed, using the folder naming scheme aforementioned.
  * old *UI Libraries* are never deleted, thus enabling us to build older versions of the application using older *UI Library* versions.
-* the *ui_library.json* recipe
-    - describe the *UI Library* files required to build the application.
-    - is kept in the *iq poc* *webapps* folder.
-    - has one entry for each required ui library file.
-    - is checked with the application changes.
-* putting it all together
-    - the application ui build
-        - navigates to the user's home folder
-        - creates a *~/.dlabs* folder, if one does not exist.
-        - clones the  *ui_library Github repository* in the *~/.dlabs folder*.
-            - it is used by he build, do not do any work on it.
-        - git checks out from *ui_library Github* repository, if *master* is not the current branch
-        - git pulls from *ui_library Github* repository repository
-        - deletes the *webapps/vendor* and *webapps/spec* folders
-        - populates the *webapps/vendor* and *webapps/spec* folder sby processing the *ui_library.json* file
+### the *ui_library.json* recipe
+* describe the *UI Library* files required to build the application.
+* is kept in the *iq poc* *webapps* folder.
+* has one entry for each required ui library file.
+* is checked with the application changes.
+### putting it all together
+* the application ui build
+ * navigates to the user's home folder
+ * creates a *~/.dlabs* folder, if one does not exist.
+ * clones the  *ui_library Github repository* in the *~/.dlabs folder*.
+  * it is used by he build, do not do any work on it.
+ * git checks out from *ui_library Github* repository, if *master* is not the current branch
+ * git pulls from *ui_library Github* repository repository
+ * deletes the *webapps/vendor* and *webapps/spec* folders
+ * populates the *webapps/vendor* and *webapps/spec* folder sby processing the *ui_library.json* file
+ 
 ## Workflow
 
 ### Development
